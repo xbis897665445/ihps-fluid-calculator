@@ -9,11 +9,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Serve static files (HTML, CSS, JS)
-app.use(express.static('public'));
+app.use(express.static('.'));
 
 // Route for the main page
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Route to handle IHPS fluid calculator requests
