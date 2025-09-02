@@ -5,6 +5,7 @@ services:
     buildCommand: npm install
     startCommand: npm start
     plan: free
+    rootDir: .
     envVars:
       - key: NODE_VERSION
         value: 18.17.0
